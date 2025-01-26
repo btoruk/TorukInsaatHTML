@@ -1,0 +1,394 @@
+/* Global CSS Ayarları */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+:root{
+    --pcolor: rgba(3, 55, 86, 1);
+    --pcolor-9: rgba(3, 55, 86, .9);
+    --pcolor-8: rgba(3, 55, 86, .8);
+    --pcolor-7: rgba(3, 55, 86, .7);
+    --pcolor-6: rgba(3, 55, 86, .6);
+    --pcolor-5: rgba(3, 55, 86, .5);
+    --pcolor-4: rgba(3, 55, 86, .4);
+    --pcolor-3: rgba(3, 55, 86, .3);
+    --pcolor-2: rgba(3, 55, 86, .2);
+    --pcolor-1: rgba(3, 55, 86, .1);
+    --scolor: rgba(197, 167, 115, 1);
+    --scolor-9: rgba(197, 167, 115, .9);
+    --scolor-8: rgba(197, 167, 115, .8);
+    --scolor-7: rgba(197, 167, 115, .7);
+    --scolor-6: rgba(197, 167, 115, .6);
+    --scolor-5: rgba(197, 167, 115, .5);
+    --scolor-4: rgba(197, 167, 115, .4);
+    --scolor-3: rgba(197, 167, 115, .3);
+    --scolor-2: rgba(197, 167, 115, .2);
+    --scolor-1: rgba(197, 167, 115, .1);
+}
+
+body{
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: #f7fafc;
+}
+
+.container{
+    width: 80%;
+    max-width: 1400px;
+}
+
+h1{font-size: clamp(1.75rem, 1.0536rem + 2.4762vw, 3.375rem);}
+h2{font-size: clamp(1.5625rem, 0.9464rem + 2.1905vw, 3rem);}
+h3{font-size: clamp(1.375rem, 0.8929rem + 1.7143vw, 2.5rem);}
+h4{font-size: clamp(1.1875rem, 0.7857rem + 1.4286vw, 2.125rem);}
+h5{font-size: clamp(1rem, 0.7321rem + 0.9524vw, 1.625rem);}
+p, i, b, input, label, button, textarea{font-size: clamp(0.8125rem, 0.6786rem + 0.4762vw, 1.125rem);}
+
+.flex {display: flex;}
+.col {flex-direction: column;}
+.jcc {justify-content: center;}
+.jcsb {justify-content: space-between;}
+.jcs {justify-content: start;}
+.jce {justify-content: end;}
+.aic {align-items: center;}
+.ais {align-items: start;}
+.aie {align-items: end;}
+.g-3 {gap: .3rem;}
+.g-5 {gap: .5rem;}
+.g1 {gap: 1rem;}
+.g1-5 {gap: 1.5rem;}
+.g2 {gap: 2rem;}
+.g2-5 {gap: 2.5rem;}
+ul{list-style: none;}
+
+
+/* Tüm sayfalar için geçerli header ve footer ayarları */
+
+/* Header */
+
+header .heroSection{
+    width: 100%;
+    height: 50dvh;
+    background: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header .heroSection .heroVignette{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25,25,25,.7);
+    color: white;
+}
+
+header nav{
+    height: 80px;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    opacity: .7;
+    transition: ease .3s;
+}
+
+header nav .menu{
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+header nav .menu span{
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    display: block;
+}
+
+header nav .brand{height: 60px;}
+header nav ul li a:hover{opacity: 1;}
+header nav .menu span:nth-child(1){width: 15px;}
+header nav .menu span:nth-child(3){width: 23px;}
+
+
+/* Footer */
+
+footer{
+    margin-top: 3rem;
+    background-color: var(--pcolor);
+    padding: 1.5rem 0;
+    position: relative;
+    z-index: 20;
+}
+
+
+footer .footerbrand{
+    height: 70px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    object-position: left;
+}
+
+footer ul li,
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul .social a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--scolor);
+}
+
+
+/* Index -----------------------------------------------------*/
+
+/* İstatistikler Alanı */
+
+.stats{margin-top: 3rem;}
+
+.stats .statsGrid{
+    background: linear-gradient(90deg, var(--scolor), var(--scolor-7));
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.stats .statsGrid .statbgMap{
+    width: 100%;
+    background: url(./images/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 0;
+    color: white;
+}
+
+
+/* Sıkça Sorulan Sorular Alanı */
+
+.faq{
+    margin-top: 3rem;
+    position: relative;
+}
+
+.faq h2{
+    position: relative;
+    z-index: 1;
+}
+
+.faq .faqIcon{
+    position: absolute;
+    right: 20%;
+    z-index: 0;
+    top: -1rem;
+    width: 100px;
+}
+
+.faq .faqGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    z-index: 1;
+}
+
+.faq .faqGrid .faqItem{
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+
+
+/* Hakkımızda -----------------------------------------------------*/
+
+.aboutUs .aboutGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.aboutUs .aboutGrid img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+
+
+/* Servislerimiz -----------------------------------------------------*/
+
+.services{position: relative;}
+
+.services .vector{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50vw;
+    z-index: 0;
+}
+
+.services .serviceGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    z-index: 1;
+}
+
+.services .serviceGrid .serviceItem{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+}
+
+.services .serviceGrid .serviceItem .serviceIcon{
+    width: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.services .serviceGrid .serviceItem p,
+.services .serviceGrid .serviceItem b{
+    text-align:  center;
+}
+
+
+
+/* Projelerimiz -----------------------------------------------------*/
+
+.projects .projectGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.projects .projectGrid .projectCard{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.projects .projectGrid .projectCard .cardVignette{
+    background-color: var(--scolor-5);
+    color: white;
+    height: 100%;
+    padding: .5rem;
+    transform: translateY(-100%);
+    transition: ease .5s;
+}
+
+.projects .projectGrid .projectCard .cardVignette h5{
+    transform: translateY(-1rem);
+}
+
+.projects .projectGrid .projectCard:hover .cardVignette{
+    transform: translateY(0);
+}
+
+/* İletişim ----------------------------------------------------- */
+
+.contact form .formInputArea .formInput,
+.contact form .formTextArea{
+    outline: none;
+    border: none;
+    background-color: white;
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+    border-radius: 1rem;
+    resize: vertical;
+}
+
+.contact form .formTextArea{ min-height: 15dvh; }
+
+.contact form .formSubmit{
+    width: 100%;
+    height: 40px;
+    background-color: var(--scolor);
+    color: white;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+
+/*
+BİLGİLENDİRME:
+Bu proje, gelişen teknoloji ile değişen tüm ekran çözünürlüklerine uygun olarak yapılmıştır.
+Bu nedenle, global css breakpoints (1400,1200,992,768...) yerine tüm ekran tiplerine uygun ve
+proje özelinde geliştirilmiş breakpointler kullanılmıştır.
+Aksi taktirde katlanabilir telefonlar gibi ekran çözünürlüğü değişebilir cihazlarda görüntü kötü gözükür.
+*/
+
+@media (max-width: 1000px){
+    /* Hakkımızda */
+    .aboutUs .aboutGrid{grid-template-columns: 1fr;}
+
+    /* Servislerimiz */
+    .services .serviceGrid{grid-template-columns: repeat(2, 1fr);}
+}
+
+@media (max-width: 727px){
+    /* Header */
+    header nav .menu{display: flex;}
+    header nav .desktop{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        background-color: var(--pcolor-9);
+        width: 0;
+        overflow: hidden;
+        transition: ease .3s;
+        padding: 1rem 0;
+    }
+
+    /* Footer */
+    footer .footerGrid{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    footer .footerGrid .footerAccess,
+    footer .footerGrid .footerAccessList{
+        align-items: start;
+    }
+
+    /* Projelerimiz */
+    .projects .projectGrid{grid-template-columns: repeat(2, 1fr);}
+}
+
+@media (max-width: 550px){
+    .services .serviceGrid, /* Servislerimiz */
+    .faq .faqGrid{          /* Sıkça sorulan sorular */
+        grid-template-columns: 1fr;
+    }
+    
+    /* İletişim */
+    .contact form .formInputArea{flex-direction: column;}
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servislerimiz - Toruk İnşaat</title>
+    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/55d7e7143f.js" crossorigin="anonymous"></script>
+</head>
+<body class="flex col g2">
+    <header>
+        <nav class="flex jcc aic">
+            <div class="container">
+                <div class="flex jcsb aic">
+                    <img src="./images/logo.png" alt="logo" class="brand">
+                    <ul id="menu" class="desktop flex aic g1">
+                        <li><a href="./index.html">ANA SAYFA</a></li>
+                        <li><a href="./hakkimizda.html">HAKKIMIZDA</a></li>
+                        <li><a href="#">SERVİSLERİMİZ</a></li>
+                        <li><a href="./projeler.html">PROJELER</a></li>
+                        <li><a href="./iletisim.html">İLETİŞİM</a></li>
+                    </ul>
+                    <div class="menu col jcsb aie" onclick="handleMenu()">
+                        <span id="menuspan1"></span>
+                        <span id="menuspan2"></span>
+                        <span id="menuspan3"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="heroSection flex jcc aic">
+            <div class="heroVignette flex col jcc aic">
+                <b>Toruk İnşaat</b>
+                <h1>Servislerimiz</h1>
+            </div>
+        </section>
+    </header>
+    
+    <section class="services flex col g1 jcc aic">
+        <h2>Servislerimiz</h2>
+        <img src="./images/1.png" alt="vector" class="vector">
+        <div class="container">
+            <div class="serviceGrid g1">
+                <div class="serviceItem flex col g-5 jcc aic">
+                    <img src="./images/services_icon01.png" alt="service" class="serviceIcon">
+                    <b>Servis Adı #1</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+                <div class="serviceItem flex col g-5 jcc aic">
+                    <img src="./images/services_icon02.png" alt="service" class="serviceIcon">
+                    <b>Servis Adı #2</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+                <div class="serviceItem flex col g-5 jcc aic">
+                    <img src="./images/services_icon03.png" alt="service" class="serviceIcon">
+                    <b>Servis Adı #3</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+                <div class="serviceItem flex col g-5 jcc aic">
+                    <img src="./images/services_icon04.png" alt="service" class="serviceIcon">
+                    <b>Servis Adı #4</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="flex jcc aic">
+        <div class="container">
+            <div class="footerGrid flex jcsb">
+                <div class="flex col g1">
+                    <img src="./images/logo.png" alt="logo" class="footerbrand">
+                    <ul class="flex col g-3">
+                        <li class="flex g-3 aic"><i class="fa-solid fa-location-arrow"></i> Cumhuriyet, İlkbahar Sk. No:1, 34876 Kartal/İstanbul</li>
+                        <li class="flex g-3 aic"><i class="fa-solid fa-phone"></i> <a href="tel:+902122129090">+90 (212) 212 90 90</a></li>
+                        <li class="flex g-3 aic"><i class="fa-solid fa-envelope"></i> <a href="mailto:info@torukinsaat.com">info@torukinsaat.com</a></li>
+                    </ul>
+                    <ul class="flex g-5">
+                        <li class="social"><a href="#" class="flex jcc aic"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="social"><a href="#" class="flex jcc aic"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="social"><a href="#" class="flex jcc aic"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footerAccess flex col g1 aie">
+                    <b style="color: white;">Hızlı Erişim</b>
+                    <ul class="footerAccessList flex col aie g-5">
+                        <li><a href="./index.html">ANA SAYFA</a></li>
+                        <li><a href="./hakkimizda.html">HAKKIMIZDA</a></li>
+                        <li><a href="#">SERVİSLERİMİZ</a></li>
+                        <li><a href="./projeler.html">PROJELER</a></li>
+                        <li><a href="./iletisim.html">İLETİŞİM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="./menu.js"></script>
+</html>
